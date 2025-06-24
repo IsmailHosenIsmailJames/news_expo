@@ -156,6 +156,7 @@ class _HomePageState extends State<HomePage> {
                   borderRadius: BorderRadius.circular(AppShapes.roundedBorder),
                   child: CachedNetworkImage(
                     imageUrl: article.urlToImage!,
+
                     errorWidget: (context, url, error) {
                       return Icon(Icons.broken_image);
                     },
